@@ -27,6 +27,13 @@
 
 * Cucumber html reports `target/cucumber-html-reports/overview-features.html`
 
+### Automated test Orchestration
+
+* Good practice is every product development should have CI/CD pipeline for their development process. Let's call this environment as `smoke`  
+* Automated test should be integrated to the pipeline, which has to be run against this `smoke` environment for every check-in done by the development team and help them to give immediate feedback. 
+* When all the automation scripts are passed against `smoke` environment then stable build has to be deployed to another environment let's call it as `demo` environment.
+* Best practice is to maintain `Build radiator` for all different features running against `smoke` environment.
+
 ### Note
 
 * Did not test against linux machine, as I work on windows machine.

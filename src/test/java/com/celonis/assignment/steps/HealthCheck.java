@@ -28,7 +28,7 @@ public class HealthCheck {
     public void theseComponentsShouldBeDisplayedUnder(List<String> myList) {
         for (String list : myList) {
             assertThat(processAnalysisPage.VerifyComponentItem(list)).isTrue();
-            logger.info("Assert component under All Workspaces");
+            logger.info("Assert component under All Workspaces: "+list);
         }
     }
 
